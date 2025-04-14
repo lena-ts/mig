@@ -1,0 +1,875 @@
+/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+/*My Styles*/
+body {
+  background: #F2F1F7;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter",sans-serif;
+  color: #303030;
+}
+h1 {
+  font-size: 70px;
+}
+h2 {
+  font-size: 42px;
+}
+h4 {
+  font-size: 30px;
+  font-weight: 400;
+}
+section {
+  padding: 60px 0;
+  text-align: center;
+}
+section h1 {
+  padding-top: 30px;
+  margin-bottom: -20px;
+  line-height: 1.2;
+}
+
+section h4 {
+  margin-bottom: 0px;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.button{
+  display: inline-block;
+  color: #fff;
+  background: rgb(255,162,195);
+  background: linear-gradient(90deg, rgba(255,162,195,1) 0%, rgba(255,162,195,1) 35%, rgba(255,78,141,1) 100%);
+  border-radius: 35px;
+  padding: 14px 38px;
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: 600;
+  margin-top:50px;
+}
+/*Menu*/
+#menu {
+  background: white;
+  padding: 12px;
+  position: fixed;
+  z-index: 1;
+  top:0;
+  width: 100%;
+}
+.menu-grid {
+  display: grid;
+  grid-template-columns: 10% 45% 55%;
+}
+
+.logo{
+  display: inline-block;
+  width: 62px;
+  height: 62px;
+  margin: auto;
+}
+
+.menu-grid ul{
+  margin: auto;
+  padding-left: 0;
+  margin-left: -10px;
+}
+
+.menu-grid ul li {
+  display: inline-block;
+  margin: 0 24px;
+}
+
+.menu-grid li a {
+  text-decoration: none;
+  color: #303030;
+  font-weight: 500;
+  font-size: 17px;
+  transition: 0.2s ease;
+}
+.menu-grid a:hover {
+  color: #FF4E8D;
+}
+.download-btn-wrap {
+  margin:auto;
+}
+.download-btn {
+  display: inline-block;
+  float: right;
+  text-align: center;
+  background: #ff4e8d;
+  /*background: linear-gradient(90deg, rgba(255,162,195,1) 0%, rgba(254,147,185,1) 0%, rgba(255,78,141,1) 100%);*/
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 16px 32px;
+  font-weight: 500;
+}
+.download-btn:hover {
+  color: white !important;
+}
+
+/*Intro*/
+#intro {
+  text-align:center;
+  padding-top: 60px;
+}
+
+.intro-images {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 2%;
+}
+.intro-images img {
+  width: 100%;
+}
+.attacks-logged {
+  position: relative;
+  margin: 20px auto 0;
+}
+.attacks-logged_text {
+  position: relative;
+  display: inline-block;
+  padding: 0 12px;
+  margin: 15px 0 40px;
+}
+.attacks-logged_text::before {
+   /*content: "";*/
+   display: inline-block;
+   width:45px;
+   height:80px;
+   background-size: 100%;
+   background-repeat: no-repeat;
+   background-image: url("../img/migraine_attribute_image.svg");
+   position: absolute;
+   left: -75px;
+   top:0px;
+ }
+.attacks-logged_text::after {
+  /*content: "";*/
+  display: inline-block;
+  width:45px;
+  height:80px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url("../img/migraine_attribute_image.svg");
+  position: absolute;
+  right: -40px;
+  top:0px;
+  transform: rotateY(180deg);
+}
+
+.attacks-logged_text h2 {
+  font-size: 46px;
+  margin-bottom: -20px;
+  margin-top:0;
+}
+.attacks-logged_text p {
+  color: #9B9BBA;
+}
+
+.zoom-in-out-box {
+  position: absolute;
+  top:30px;
+  display: inline-block;
+  margin: auto 0 auto -24px;
+  width: 24px;
+  height: 24px;
+  animation: zoom-in-zoom-out 1s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    scale: 100%
+  }
+  50% {
+    scale: 120%;
+  }
+  100% {
+    scale: 100%;
+  }
+}
+
+/*Reports*/
+#reports h1{
+  position: relative;
+}
+#reports h1::before {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  margin-left: -71px;
+  content: "PRO FEATURE";
+  font-size: 15px;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: rgb(255,162,195);
+  background: linear-gradient(90deg, rgba(255,162,195,1) 0%, rgba(255,162,195,1) 35%, rgba(255,78,141,1) 100%);
+}
+
+.report_images {
+  margin-top:60px;
+}
+.report_images img {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+/*Widgets*/
+.widgets_images{
+  margin: 60px auto 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 3%;
+  max-width: 800px;
+}
+.widgets_images img {
+  width: 100%;
+}
+
+/*Articles*/
+.articles {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  grid-column-gap: 2%;
+  width:100%;
+  max-width: 1100px;
+  margin: 50px auto 0;
+}
+.articles a {
+  text-decoration: none;
+}
+.article {
+  background: white;
+  border-radius: 35px;
+  overflow: hidden;
+  text-align: left;
+}
+.article img {
+  width: 100%;
+}
+.article_text {
+  padding: 20px 40px;
+}
+.article_text h4 {
+  color: #303030;
+  font-weight: 600;
+  font-size: 36px;
+  margin-top:0;
+}
+.article_text p {
+  color: #303030;
+  font-size: 20px;
+  margin-top: 4px;
+  font-weight: 300;
+}
+
+/* Article body*/
+.article-body{
+  margin: 40px auto;
+  border-radius: 50px;
+  max-width:1100px;
+}
+.article-body img {
+  border-radius: 50px;
+  width: 100%;
+
+}
+
+.article-content{
+  padding: 60px;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: left;
+  background: white;
+  border-radius: 50px;
+  margin-top: 8px;
+}
+
+.article-content h3 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.article-content span{
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.article-intro{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /*grid-column-gap: 20px;*/
+  margin-bottom: 20px;
+}
+
+.article-intro span {
+  display: inline-block;
+  max-height: 413px;
+  background: white;
+  font-size: 27px;
+  border-radius: 50px;
+  padding: 60px;
+  text-align: left;
+}
+.article-intro h3 {
+  margin-top:0px;
+}
+
+.article-refs{
+  color: #898989;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+  margin-top: 20px;
+  display: none;
+  /*background: white;*/
+  /*padding: 10px 50px 0;*/
+  /*border-radius: 50px;*/
+}
+.article-refs span{
+  margin-bottom:0;
+}
+.article-refs ol {
+  margin-top: 0;
+  padding-left:20px;
+}
+.ref-title {
+  font-weight: 600;
+}
+
+/*Why MiG*/
+.why-mig{
+  display: grid;
+  grid-template-columns: 49% 49%;
+  grid-column-gap: 2%;
+  margin-top:40px;
+}
+.why-mig-feature{
+  text-align: center;
+  background: white;
+  padding: 60px;
+  border-radius: 50px;
+}
+.why-mig-feature img{
+  margin: auto;
+  width: 214px;
+}
+.why-mig-feature-title{
+  display: block;
+  font-size: 42px;
+  line-height: 52px;
+  font-weight: 600;
+}
+.why-mig-feature p{
+  font-size: 20px;
+  line-height: 31px;
+  font-weight: 300;
+}
+.text-pink-accent{
+  color: #FF4E8D;
+}
+
+/* Reviews*/
+.review_grid{
+  margin-top:40px;
+}
+.review_row{
+  display: grid;
+  grid-template-columns: 49% 49%;
+  grid-column-gap: 2%;
+}
+.review_grid_cell{
+  background: white;
+  border-radius: 50px;
+  padding: 40px;
+  text-align: left;
+}
+.review_title{
+  font-size: 32px;
+  font-weight: 600;
+  padding: 8px 0 16px;
+}
+.review_subtitle{
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+  color: #9B9BBA;
+}
+.review_text{
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 31px;
+  font-weight: 300;
+}
+
+/*Footer*/
+.footer {
+  max-width: 1100px;
+  margin: auto;
+  background: white;
+  padding: 30px 30px;
+  border-radius: 35px;
+}
+.copyright {
+  text-align: left;
+  padding:40px 0 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.footer_links{
+  text-align: right;
+  list-style-type: none;
+  margin:0;
+}
+.footer_links li{
+  display: inline-block;
+  padding-left: 20px;
+}
+.footer_links li a{
+  text-decoration: none;
+  color:#9B9BBA;
+  font-size: 16px;
+}
+.footer_links li a:hover {
+  color: #FF4E8D;
+  transition: 0.2s ease;
+}
+.floating-button {
+  display: none;
+}
+
+/* Privacy */
+.text-page{
+  padding: 0 40px;
+}
+
+
+
+/**************** MOBILE ******************/
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+@media(max-width:768px) {
+  section{
+    padding: 20px 0;
+  }
+  h1 {
+    font-size: 42px;
+    padding: 0 20px;
+  }
+  h4{
+    font-size: 28px;
+    padding: 0 20px;
+  }
+  h2{
+    line-height: 50px;
+  }
+  .no-mobile{
+    display: none !important;
+  }
+
+  /*Mobile Menu*/
+  #menu .download-btn {
+    display: none;
+  }
+  .menu-grid{
+    grid-template-columns: 20% 80%;
+  }
+  .floating-button {
+    position: fixed;
+    z-index: 1;
+    bottom: 42px;
+    margin: 0 20px;
+    width: calc(100% - 40px);
+    display: block;
+  }
+  .download-btn {
+    width: 100%;
+    float: none;
+    font-size: 22px;
+    line-height: 74px;
+    padding:0;
+    border-radius: 35px;
+    background: rgb(255,162,195);
+    background: linear-gradient(90deg, rgb(251, 149, 185) 0%, rgb(250, 118, 160) 35%, rgba(255,78,141,1) 100%);
+  }
+
+  /*Mobile Intro*/
+  .intro-images{
+    padding: 0 20px;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+  .attacks-logged_text h2{
+    font-size: 36px;
+  }
+  #intro h1{
+    margin-top: 60px;
+  }
+
+
+  /* Mobile Articles*/
+  .articles {
+    grid-template-columns: 100%;
+    grid-row-gap: 20px;
+    margin: 30px auto;
+  }
+  #articles .button{
+    margin-top:0px;
+  }
+  .article{
+    width: calc(100% - 40px);
+    margin: auto;
+  }
+  .article-intro{
+    display: block;
+  }
+  .article-content{
+    margin-top: 0;
+  }
+  .article_text{
+    padding: 20px;
+  }
+  .article_text h4{
+    padding-left: 0;
+    line-height: 42px;
+  }
+  .article_text p{
+    margin-top: 8px;
+  }
+  .articles-page h1{
+      margin-top: 80px;
+  }
+  #article h3{
+    line-height: 42px;
+  }
+  #article h1{
+    margin-top: 80px;
+  }
+  #article .article-content{
+    padding: 42px;
+  }
+  .article-intro span{
+    padding: 42px;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .footer_links{
+    text-align: center;
+    padding: 20px 0;
+  }
+  #footer {
+    padding-bottom: 0;
+  }
+  .footer{
+    margin: 0 20px;
+    display: none;
+  }
+  .copyright{
+    margin-bottom: 100px;
+    display: block;
+    padding: 30px;
+    text-align: center;
+  }
+
+  /*Mobile Why MiG*/
+  .why-mig{
+    grid-template-rows: auto auto;
+    grid-template-columns: none;
+    grid-row-gap: 20px;
+    padding: 0 20px;
+    width: calc(100% - 40px);
+  }
+  .why-mig-feature{
+    padding: 40px;
+  }
+  .why-mig-feature img{
+    width: 160px;
+  }
+
+  /* Mobile Reports*/
+  .report_images {
+    padding: 0 20px;
+  }
+
+  /* Mobile Reviews*/
+  .review_row{
+    grid-template-columns: 100%;
+    grid-row-gap: 20px;
+  }
+  #reviews .button{
+    margin-top: 30px;
+  }
+
+  /*Mobile Widgets*/
+  .widgets_images{
+    margin: 40px 20px;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 6%;
+  }
+  .widgets_images img{
+    width: 94%;
+  }
+
+  /* Privacy */
+  .text-page{
+    padding: 0 20px 80px;
+  }
+
+  /* end of mobile*/
+}
