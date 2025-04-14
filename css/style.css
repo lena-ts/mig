@@ -313,6 +313,10 @@ section h4 {
   margin: auto;
 }
 
+.logo img {
+  width: 100%;
+}
+
 .menu-grid ul{
   margin: auto;
   padding-left: 0;
@@ -746,6 +750,11 @@ section h4 {
     border-radius: 35px;
     background: rgb(255,162,195);
     background: linear-gradient(90deg, rgb(251, 149, 185) 0%, rgb(250, 118, 160) 35%, rgba(255,78,141,1) 100%);
+  }
+
+  .logo{
+    width: 42px;
+    height: 42px;
   }
 
   /*Mobile Intro*/
