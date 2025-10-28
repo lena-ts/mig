@@ -443,19 +443,19 @@ section h4 {
 #reports h1{
   position: relative;
 }
-#reports h1::before {
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  margin-left: -71px;
-  content: "PRO FEATURE";
-  font-size: 15px;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 20px;
-  background: rgb(255,162,195);
-  background: linear-gradient(90deg, rgba(255,162,195,1) 0%, rgba(255,162,195,1) 35%, rgba(255,78,141,1) 100%);
-}
+/*#reports h1::before {*/
+/*  position: absolute;*/
+/*  top: -30px;*/
+/*  left: 50%;*/
+/*  margin-left: -71px;*/
+/*  content: "PRO FEATURE";*/
+/*  font-size: 15px;*/
+/*  color: white;*/
+/*  padding: 10px 20px;*/
+/*  border-radius: 20px;*/
+/*  background: rgb(255,162,195);*/
+/*  background: linear-gradient(90deg, rgba(255,162,195,1) 0%, rgba(255,162,195,1) 35%, rgba(255,78,141,1) 100%);*/
+/*}*/
 
 .report_images {
   margin-top:60px;
@@ -741,7 +741,8 @@ section h4 {
 
 #pressure-sensitivity-discover h2,
 #pressure-sensitivity-patterns h2,
-#pressure-sensitivity-science h2{
+#pressure-sensitivity-science h2,
+#midas-feedback h2{
   text-align: left;
 }
 .pressure-sensitivity-discover-row,
@@ -808,6 +809,14 @@ section h4 {
   padding-bottom: 16px;
   display: inline-block
 }
+
+/**MIDAS**/
+.midas-feedback-image.mobile,
+.midas-article-img.mobile{
+  display: none;
+}
+
+
 
 
 
@@ -1047,6 +1056,27 @@ section h4 {
   .column-title {
     font-size: 20px;
     margin: auto;
+  }
+  #pressure-sensitivity-discover h2,
+  #pressure-sensitivity-patterns h2,
+  #pressure-sensitivity-science h2,
+  #midas-feedback h2{
+    text-align: left;
+    padding: 0 20px;
+  }
+
+
+  /*MIDAS*/
+  .midas-feedback-image.mobile,
+  .midas-article-img.mobile{
+    display: block;
+  }
+  .midas-feedback-image.mobile img {
+    width: 100%;
+  }
+  .midas-feedback-image.desktop,
+  .midas-article-img.desktop{
+    display: none;
   }
 
   /**************** end of mobile ****************/
