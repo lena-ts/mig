@@ -352,6 +352,7 @@ section h4 {
   border-radius: 30px;
   padding: 16px 32px;
   font-weight: 500;
+  margin-left: 12px;
 }
 .download-btn:hover {
   color: white !important;
@@ -366,12 +367,29 @@ section h4 {
 .intro-images {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-column-gap: 0;
-  margin-top: 30px;
+  grid-column-gap: 32px;
+  margin-top: 86px;
 }
 .intro-images img {
-  width: 110%;
+  width: 100%;
+  margin: auto;
+  border-radius: 22px;
+  box-shadow: 0px 0px 24px 18px rgb(121 112 166 / 7%);
 }
+#intro .container{
+  position: relative;
+}
+.intro-desktop-qr{
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+.intro-desktop-qr img{
+  width: 160px;
+  border-radius: 30px;
+}
+
+
 .attacks-logged {
   position: relative;
   margin: 20px auto 0;
@@ -888,9 +906,12 @@ margin-bottom: 12px;
   .container {
     padding: 0 20px;
   }
-  .no-desktop {
+  .no-desktop, 
+  .intro-desktop-qr,
+  .appswelove {
   display: none;
 }
+
 }
 @media(max-width:768px) {
   section{
