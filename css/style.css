@@ -954,7 +954,7 @@ margin-bottom: 12px;
     display: block;
     background-color: rgba(255, 255, 255, 0.5);
     padding: 16px 0;
-    bottom:0;
+    bottom:-5px;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
   }
@@ -971,7 +971,7 @@ margin-bottom: 12px;
   }
   .badge-button{
     border-radius: 12px;
-    height: 60px;
+    height: 68px;
   }
 
   .logo{
