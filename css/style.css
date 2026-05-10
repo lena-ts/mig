@@ -1075,6 +1075,11 @@ margin-bottom: 12px;
     padding: 0 30px;
   }
 
+  .article-body img {
+  width: 90%;
+
+}
+
 
   .footer_links{
     text-align: center;
