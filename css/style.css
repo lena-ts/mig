@@ -945,6 +945,15 @@ margin-bottom: 12px;
   display: none;
 }
 
+/** Contacts **/
+.contacts .text-page h2 {
+  margin-top: 100px;
+  text-align: left;
+}
+.contacts-info {
+  margin-top: 20px;
+  text-align: left;
+}
 
 
 
@@ -1318,6 +1327,10 @@ margin-bottom: 12px;
    }
   .instagram-media{
     margin: auto!important;
+  }
+
+  .contact-author{
+    padding-left: 0;
   }
 
    /**************** end of mobile ****************/
